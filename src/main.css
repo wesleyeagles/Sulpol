@@ -6,3 +6,8 @@ body {
 
     font-family: 'Inter';
 }
+
+.active {
+
+    color: #81D742;
+}

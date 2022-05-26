@@ -3,8 +3,8 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Contato from "./pages/Contato";
-import TopNavBar from "./components/TopNavBar";
-import Navbar from "./components/Navbar";
+import TopNavBar from "./components/TopNavBar/TopNavBar";
+import Navbar from "./components/Navbar/Navbar";
 import ASulpol from "./pages/ASulpol";
 
 function RoutesDOM() {

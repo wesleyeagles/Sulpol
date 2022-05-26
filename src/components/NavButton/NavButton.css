@@ -1,0 +1,24 @@
+.NavButton {
+
+    padding: 10px 25px;
+    color: #FFF;
+    background-color: #81D742;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width: 1480px) {
+    
+    .NavButton {
+
+        padding: 10px 20px;
+        color: #FFF;
+        background-color: #81D742;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 20px;
+    
+    }
+}
