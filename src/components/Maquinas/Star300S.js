@@ -15,7 +15,21 @@ function Star300S({toggleMaquinas})  {
 
   const openPrecision = () => {
     setPrecision(!precision)
+    
+    if (tecnology == true) {
+        setTecnology(!tecnology)
+    }
   }  
+
+  const [tecnology, setTecnology] = useState(0);
+
+  const openTecnology = () => {
+      setTecnology(!tecnology)
+      
+      if (precision == true) {
+          setPrecision(!precision)
+      }
+  }
       
    
 
@@ -46,12 +60,12 @@ function Star300S({toggleMaquinas})  {
         <div className='flex flex-col mt-20'>
             <div className='flex flex-col sm:flex-col md:flex-row justify-between'>
                 <div className='md:w-[45%] lg:w-[48%] 2xl:w-[45%] border-b pb-2 sm:pb-0 sm:border-none'>
-                    <h2 className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Precisão <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
-                    <p className='h-0 sm:h-auto overflow-hidden text-sm ml-9'>Como todo o equipamento foi projetado, dimensionado, fabricado e testado por SULPOL, possuindo todos os controles de temperatura e pressão necessários para o bom andamento do processo, a dosagem tem tolerância de 1%</p>
+                    <h2 onClick={openPrecision} className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Precisão <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
+                    <p className={`h-0 sm:h-auto overflow-hidden text-sm ml-9 transition-all ${precision ? "h-32" : null}`}>Como todo o equipamento foi projetado, dimensionado, fabricado e testado por SULPOL, possuindo todos os controles de temperatura e pressão necessários para o bom andamento do processo, a dosagem tem tolerância de 1%</p>
                 </div>
                 <div className='md:w-[45%] lg:w-[48%] 2xl:w-[45%] border-b mt-2 pb-2 sm:pb-0 sm:border-none sm:mt-10 md:mt-0'>
-                    <h2 className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Tecnologia <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
-                    <p className='h-0 sm:h-auto overflow-hidden text-sm ml-9'>Por sermos os maiores, trabalhamos com os melhores fornecedores, somando nossa engenharia e experiência, necessidades dos Clientes, sempre estamos fornecendo a melhor tecnologia atualizada.</p>
+                    <h2 onClick={openTecnology} className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Tecnologia <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
+                    <p className={`h-0 sm:h-auto overflow-hidden text-sm ml-9 transition-all ${tecnology ? "h-32" : null}`}>Por sermos os maiores, trabalhamos com os melhores fornecedores, somando nossa engenharia e experiência, necessidades dos Clientes, sempre estamos fornecendo a melhor tecnologia atualizada.</p>
                 </div>
             </div>
 
