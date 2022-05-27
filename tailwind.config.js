@@ -1,7 +1,9 @@
 module.exports = {
   content: ["./src/components/*.{html,js}",
             "./src/components/Navbar/*.{html,js}",
-            "./src/components/TopNavBar/*.{html,js}"],
+            "./src/components/TopNavBar/*.{html,js}",
+            "./src/components/Maquinas/*.{html,js}"],
+  
   theme: {
     extend: {
       backgroundColor: {
