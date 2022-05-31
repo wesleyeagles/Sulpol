@@ -93,10 +93,10 @@ function Navbar() {
 
     </div>
 
-    <div className={`bg-white shadow-md h-0 overflow-hidden w-full lg:w-[30%] 2xl:w-1/4 transition-all duration-1000 fixed z-10 ${menuProdutos ? "h-[350px] lg:h-screen" : null} ${hideMenu ? "-translate-y-72" : null}`}>
+    <div className={`bg-white shadow-md h-0 overflow-hidden w-full lg:w-[30%] 2xl:w-1/4 transition-all duration-1000 fixed z-10  ${menuProdutos ? "h-[350px] lg:h-screen" : null} ${hideMenu ? "-translate-y-72" : null}`}>
       <div className='container mx-auto h-full'>
 
-      <div className={`flex flex-wrap lg:flex-nowrap lg:flex-col lg:mt-5 gap-2 sm:gap-4 lg:gap-3 ${menuProdutos ? "h-[45vh] lg:h-[75vh] overflow-y-scroll" : null}`}>
+      <div className={`flex flex-wrap lg:flex-nowrap lg:flex-col lg:mt-5 gap-2 sm:gap-4 lg:gap-3 productsMenu ${menuProdutos ? "h-[45vh] lg:h-[75vh] overflow-y-scroll" : null}`}>
         <div onClick={() => toggleMaquinas()} className='flex w-[31%] sm:w-[31%] md:w-[31.7%] h-20 lg:w-full lg:h-auto items-center justify-between border-b border-gray-300 lg:pb-3 cursor-pointer'> <h2 className='machine-name w-full sm:w-[130px] md:w-[150px] lg:w-2/5'>STAR <span className='text-sulpol-green font-bold'>300S</span> </h2> <div className='flex items-center md:gap-5'> <img className='hidden sm:block w-[50px] md:w-auto' src={Star300s}/> <MdKeyboardArrowRight color='#81D742' size={20}/>  </div> </div>
         <div className='flex w-[31%] sm:w-[31%] md:w-[31.7%] h-20 lg:w-full lg:h-auto items-center justify-between border-b border-gray-300 lg:pb-3 cursor-pointer'> <h2 className='machine-name w-full sm:w-[130px] md:w-[150px] lg:w-2/5'>STAR <span className='text-sulpol-green font-bold'>300S-MRP</span> </h2> <div className='flex items-center md:gap-5'> <img className='hidden sm:block w-[50px] md:w-auto' src={Star300s}/> <MdKeyboardArrowRight color='#81D742' size={20}/>  </div> </div>
         <div className='flex w-[31%] sm:w-[31%] md:w-[31.7%] h-20 lg:w-full lg:h-auto items-center justify-between border-b border-gray-300 lg:pb-3 cursor-pointer'> <h2 className='machine-name w-full sm:w-[130px] md:w-[150px] lg:w-2/5'>STAR <span className='text-sulpol-green font-bold'>300S-PV</span> </h2> <div className='flex items-center md:gap-5'> <img className='hidden sm:block w-[50px] md:w-auto' src={Star300s}/> <MdKeyboardArrowRight color='#81D742' size={20}/>  </div> </div>

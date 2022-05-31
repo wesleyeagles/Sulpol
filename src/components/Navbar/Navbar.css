@@ -21,9 +21,26 @@
     font-weight: 500;
 }
 
+.productsMenu {
+
+    scrollbar-width: 0.1px;
+}
+
+.productsMenu::-webkit-scrollbar {
+
+    display: none;
+}
+
 .overheight {
 
-    height: 3000px;
+    height: 6000px;
+    scrollbar-width: none;
+}
+
+.overheight::-webkit-scrollbar {
+
+    width: 0.1px;
+    appearance: none;
 }
 
 @media screen and (max-width: 1400px) {
